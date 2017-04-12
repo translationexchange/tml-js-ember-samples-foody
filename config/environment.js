@@ -23,7 +23,7 @@ module.exports = function(environment) {
     },
 
     tml: {
-      key   : "488c2ad900f8a012cf8eedadb0df27c403a0684bc5275b6e67fc02ac11fc73d0"
+      key   : "<YOUR TRANSLATION EXCHANGE API KEY>"
     }
   };
 
