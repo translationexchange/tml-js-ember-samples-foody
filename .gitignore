@@ -1,12 +1,17 @@
-**/.DS_Store
-**/node_modules
-nbproject
-manifest.mf
-build.xml
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-.project
-.settings
-.idea/*
-node_modules/
-*.log
-**/.idea/*
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log*
+testem.log

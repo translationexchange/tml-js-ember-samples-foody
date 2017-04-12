@@ -1,0 +1,55 @@
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+          <div class="col-lg-6 col-sm-7">
+            {{#link-to "recipes" class="back-btn"}}{{tr "Back"}}{{/link-to}}
+            
+            <div class="recipe">
+              <h2>{{tr recipe.name}}</h2>
+              {{#if recipe.preparation}}
+                <h5>{{tr "Preparation"}}</h5>
+                <p data-tml-source="recipe-{{recipe.id}}">{{tr recipe.preparation}}</p>
+                <hr>
+              {{/if}}
+              <h5>{{tr "Directions"}}</h5>
+              <ol data-tml-source="recipe-{{recipe.id}}">
+                {{#each recipe.directions as |dir|}}
+                  <li><p>{{tr dir}}</p></li>
+                {{/each}}
+              </ol>
+            </div>
+          </div>
+
+          <div class="col-sm-5 col-lg-offset-1">
+            <div class="panel panel-default">
+              <img class="img-responsive" src={{recipe.image}} />
+              <div class="panel-body">
+                <h5>{{tr "Ingredient List"}}</h5>
+                <table class="table recipe-table">
+                  <tbody data-tml-source="recipe-{{recipe.id}}">
+                    {{#each recipe.ingredients as |ingredient|}}
+                      <tr>
+                        <td>
+                          <span style="font-weight: bold; color: black">
+                            {{tr ingredient.quantity}}
+                            {{#if ingredient.measurements}}
+                              {{tr ingredient.measurements}}
+                            {{/if}}
+                          </span>
+                          {{tr ingredient.name}}
+                        </td>
+                      </tr>
+                    {{/each}}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
