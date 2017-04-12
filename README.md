@@ -24,3 +24,4 @@ Find out more at [Translation Exchange](https://translationexchange.com).
 ### Publishing Translations
 
 Make sure to publish your translations in the Translation Exchange dashboard to see translated content outside of Translation Mode.
+

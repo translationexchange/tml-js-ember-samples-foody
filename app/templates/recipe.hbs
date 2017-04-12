@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-6 col-sm-7">
             {{#link-to "recipes" class="back-btn"}}{{tr "Back"}}{{/link-to}}
-            
+
             <div class="recipe">
               <h2>{{tr recipe.name}}</h2>
               {{#if recipe.preparation}}
@@ -32,13 +32,10 @@
                     {{#each recipe.ingredients as |ingredient|}}
                       <tr>
                         <td>
-                          <span style="font-weight: bold; color: black">
-                            {{tr ingredient.quantity}}
-                            {{#if ingredient.measurements}}
-                              {{tr ingredient.measurements}}
-                            {{/if}}
-                          </span>
-                          {{tr ingredient.name}}
+                          {{tr (concat "<strong>{count} " ingredient.measurements "</strong> of " ingredient.name)
+                               count=ingredient.quantity
+                               strong="<span style='font-weight: bold; color: black'>{$0}</span>"
+                          }}
                         </td>
                       </tr>
                     {{/each}}

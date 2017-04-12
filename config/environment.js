@@ -23,8 +23,15 @@ module.exports = function(environment) {
     },
 
     tml: {
-      key   : "<YOUR TRANSLATION EXCHANGE API KEY>"
+      key   : "d5f4931ad384c1cf1139b98c699c46a53981dc0b6030bc33dcf095caee130bf0",
+      cache: {
+        enabled: true,
+        adapter: "browser",
+        version: "20170412201759",
+        path: "/translations"
+      }
     }
+
   };
 
   if (environment === 'development') {

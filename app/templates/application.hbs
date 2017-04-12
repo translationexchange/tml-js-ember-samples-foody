@@ -5,7 +5,7 @@
     {{/link-to}}
     <ul class="nav navbar-nav navbar-right">
       <li>
-        <a href="javascript://" {{action (action tml.toggleTranslationMode)}}> 
+        <a href="javascript://" {{action (action tml.toggleTranslationMode)}}>
           {{#if tml.translationModeEnabled}}
             {{tr "Disable Translation Mode"}}
           {{else}}
@@ -22,7 +22,7 @@
         <ul class="dropdown-menu">
           {{#each tml.availableLanguages as |language|}}
             <li>
-              <a href="javascript://" {{action (action tml.changeLanguage) language.locale}}>
+              <a href="?locale={{language.locale}}">
                 <img src={{language.flag_url}} />
                 {{tr language.english_name}}
               </a>
@@ -30,7 +30,7 @@
           {{/each}}
         </ul>
       </li>
-    </ul>    
+    </ul>
   </div>
 </div>
 
