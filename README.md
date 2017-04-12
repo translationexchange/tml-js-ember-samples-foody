@@ -14,8 +14,7 @@ Find out more at [Translation Exchange](https://translationexchange.com).
 
 * Create an account at [Translation Exchange](https://translationexchange.com)
 * Create a new project
-* Copy your API Key
-* Add your API Key to `config/environment.js`
+* Copy your API Key and add it to `config/environment.js`
 
 ## Running / Development
 
