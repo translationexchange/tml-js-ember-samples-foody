@@ -1,9 +1,10 @@
-/* jshint node: true */
+/* eslint-env node */
+'use strict';
 
 module.exports = function(environment) {
-  var ENV = {
-    modulePrefix: 'trex-foody-ember',
-    environment: environment,
+  let ENV = {
+    modulePrefix: 'tml-js-ember-samples-foody',
+    environment,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -23,8 +24,13 @@ module.exports = function(environment) {
     },
 
     tml: {
-      key   : "<YOUR TRANSLATION EXCHANGE API KEY>"
+      key   : "ecfb18659cb50fd6775bacbc99334d21f61c8e973860bf92a0573557173b24a4",
+      debug: true,
+      agent : { 
+        enabled: false
+      }
     }
+
   };
 
   if (environment === 'development') {
@@ -33,6 +39,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    ENV.tml.agent.enabled = true
   }
 
   if (environment === 'test') {

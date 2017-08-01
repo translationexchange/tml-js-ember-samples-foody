@@ -1,0 +1,47 @@
+
+{{!-- <div class="recipe-nav" data-spy='affix' data-offset-top='480'>
+  <div class="container text-centered">
+    <div id="nav-categories">
+    </div>
+  </div>
+</div> --}}
+
+<div class="content">
+  <div class="container">
+
+    
+
+      <div class="row">
+        <div class="col-md-2">
+          <nav class="nav flex-column">
+            {{#each categories as |cat|}}
+              <a class="nav-link" href='#{{cat.id}}'>{{tr cat.name}}</a>
+            {{/each}}
+          </nav>
+        </div>
+        <div class="col-md-10">
+          {{#each categories as |cat|}}
+            <a class="anchor" id={{cat.id}}></a>
+            
+            <h3 class="mb-3">{{tr cat.name}}</h3>
+            <div class="row mb-4">
+              {{#each (get recipes cat.id) as |rec|}}
+                <div class="col-lg-4 col-md-6">
+                  {{#link-to "recipes.recipe" rec class="recipe-thumbnail mb-4"}}
+                    <img class="img-responsive mb-3 rounded" src={{rec.image}} />
+                    <div>
+                      <h5>{{tr rec.name}}</h5>
+                      <p>{{tr rec.description}}</p>
+                    </div>
+                  {{/link-to}}
+                </div>
+              {{/each}}
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    
+
+  </div>
+</div>
+

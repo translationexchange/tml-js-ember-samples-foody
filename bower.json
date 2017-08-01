@@ -1,9 +1,7 @@
 {
-  "name": "trex-foody-ember",
+  "name": "tml-js-ember-samples-foody",
   "dependencies": {
-    "ember": "~2.9.0-beta.1",
-    "ember-cli-shims": "0.1.3",
-    "tml-js": "^0.4.65",
-    "bootstrap": "^3.3.7"
+    "tml-js": "*",
+    "bootstrap": "4.0.0-alpha.6"
   }
 }
