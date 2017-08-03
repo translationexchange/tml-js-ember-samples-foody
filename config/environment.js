@@ -24,11 +24,7 @@ module.exports = function(environment) {
     },
 
     tml: {
-      key   : "ecfb18659cb50fd6775bacbc99334d21f61c8e973860bf92a0573557173b24a4",
-      debug: true,
-      agent : { 
-        enabled: false
-      }
+      key   : "<YOUR API KEY>"
     }
 
   };
@@ -40,7 +36,6 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
 
-    ENV.tml.agent.enabled = true
   }
 
   if (environment === 'test') {

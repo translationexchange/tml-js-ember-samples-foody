@@ -35,7 +35,6 @@
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.14.1",
     "ember-tml": "git+ssh://git@github.com/translationexchange/ember-tml.git#develop",
-    "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
