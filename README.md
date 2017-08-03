@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://avatars0.githubusercontent.com/u/1316274?v=3&s=200">
+</p>
+
 # Foody TML Sample App built with Ember
 
 This is a sample application showing the use of Ember with Translation Markup Language (TML).
@@ -5,7 +9,7 @@ Find out more at [Translation Exchange](https://translationexchange.com).
 
 ## Installing the App
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/translationexchange/tml-js-ember-samples-foody.git`
 * `cd tml-js-ember-samples-foody`
 * `npm install`
 
