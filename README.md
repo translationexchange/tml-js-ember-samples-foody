@@ -38,7 +38,7 @@ Links
 
 * Connect with TranslationExchange on Facebook: https://www.facebook.com/translationexchange
 
-* Watch out videos on YouTube: https://www.youtube.com/channel/UC7gLEbvNO1IKPv5dxwzR3Iw
+* Watch our demo videos on YouTube: https://www.youtube.com/channel/UC7gLEbvNO1IKPv5dxwzR3Iw
 
 * If you have any questions or suggestions, contact us: support@translationexchange.com
 
