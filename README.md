@@ -12,6 +12,7 @@ Find out more at [Translation Exchange](https://translationexchange.com).
 * `git clone https://github.com/translationexchange/tml-js-ember-samples-foody.git`
 * `cd tml-js-ember-samples-foody`
 * `npm install`
+* `bower install`
 
 ## Configure
 
