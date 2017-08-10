@@ -5,7 +5,7 @@
 # Foody TML Sample App built with Ember
 
 This is a sample application showing the use of Ember with Translation Markup Language (TML).
-Find out more at [Translation Exchange](https://translationexchange.com).
+Read more about [Ember TML](https://github.com/translationexchange/ember-tml).
 
 ## Installing the App
 
@@ -26,7 +26,6 @@ Find out more at [Translation Exchange](https://translationexchange.com).
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ## Translation Mode & Publishing Translations
-
 * Press `CTRL`+`Shift`+`i` to enter translation mode and start translating content
 * Make sure to publish your translations in the Translation Exchange dashboard to see translated content outside of Translation Mode.
 
